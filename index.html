@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akarys Sansyzbaiuly — Student </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+    <nav class="nav">
+      <div class="nav-logo">AJ</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Student Researcher · Information Systems</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="line-wrap"><span class="line line-1">Akarys</span></span>
+        <span class="line-wrap"><span class="line line-2">Sansyzbaiuly</span></span>
+      </h1>
+      <p class="hero-sub">Building bridges between data &amp; decision-making</p>
+      <a href="#about" class="hero-cta">
+        <span>Explore</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-number">01</div>
+          <h2 class="section-title">About<br><em>Me</em></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-right">
+          <p class="about-lead">
+            I'm a student researcher deeply fascinated by the way Information Systems shape how people work, communicate, and thrive.
+          </p>
+          <p class="about-body">
+            My work sits at the intersection of enterprise architecture, data-driven workflows, and the DevOps pipelines that stitch them together. I'm currently exploring how cloud-native tools and automation are redefining infrastructure — and what it truly means to deploy software with confidence and speed.
+          </p>
+          <div class="about-tags">
+            <span class="tag">DevOps</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">Data Systems</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="skills-header">
+        <div class="section-number">02</div>
+        <h2 class="section-title">Currently<br><em>Learning</em></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-index="01">
+          <div class="skill-card-bg"></div>
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 24h16M16 18h10M16 30h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="33" cy="33" r="6" fill="var(--accent)" stroke="none"/>
+                <path d="M31 33l1.5 1.5L35 31" stroke="var(--bg)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="skill-card-num">01</div>
+            <h3 class="skill-name">Git &amp; GitHub Actions</h3>
+            <p class="skill-desc">Version control workflows, branching strategies, and CI/CD pipelines for automated builds and deployments.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--prog: 72%"></div>
+            </div>
+            <span class="skill-label">Intermediate</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-index="02">
+          <div class="skill-card-bg"></div>
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="12" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 20h32" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M17 28h14M17 32h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="16" r="1.5" fill="currentColor"/>
+                <circle cx="17" cy="16" r="1.5" fill="currentColor"/>
+                <circle cx="22" cy="16" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="skill-card-num">02</div>
+            <h3 class="skill-name">SQL &amp; Database Design</h3>
+            <p class="skill-desc">Relational schema modelling, query optimisation, and data normalisation for robust information management.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--prog: 60%"></div>
+            </div>
+            <span class="skill-label">Developing</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-index="03">
+          <div class="skill-card-bg"></div>
+          <div class="skill-card-inner">
+            <div class="skill-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 16l-6 8 6 8M34 16l6 8-6 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 12l-8 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="skill-card-num">03</div>
+            <h3 class="skill-name">Python for Automation</h3>
+            <p class="skill-desc">Scripting, API integration, and process automation to reduce manual overhead and improve system interoperability.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--prog: 55%"></div>
+            </div>
+            <span class="skill-label">Developing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-bg-grid" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-content">
+        <h2 class="footer-heading">Let's <em>Connect</em></h2>
+        <p class="footer-sub">Open to research collaborations and internship opportunities.</p>
+        <a href="mailto:alex@example.com" class="footer-email">250103185@sdu.edu.kz</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Live</span>
+        </div>
+        <p class="footer-deploy">Last Deployment: <time datetime="2026-04-23">April 23, 2026</time></p>
+        <p class="footer-copy">Built with HTML · CSS · GitHub Actions</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
